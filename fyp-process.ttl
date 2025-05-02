@@ -1,0 +1,44 @@
+@prefix : <https://raw.githubusercontent.com/arsalanahmad123/websemantics-fyp-ontology/main/fyp-process.ttl#> .
+@base <https://raw.githubusercontent.com/arsalanahmad123/websemantics-fyp-ontology/main/fyp-process.ttl> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/arsalanahmad123/websemantics-fyp-ontology/main/fyp-process.ttl> a owl:Ontology .
+
+### Classes ###
+:Stakeholder a owl:Class .
+:Student a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
+:Supervisor a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
+:Coordinator a owl:Class ;
+    rdfs:subClassOf :Stakeholder .
+
+:FYPProcess a owl:Class .
+:Proposal a owl:Class .
+:EvaluationCriteria a owl:Class .
+:Documentation a owl:Class .
+
+### Object Properties ###
+:hasProposal a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Proposal .
+
+:hasStakeholder a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Stakeholder .
+
+:isSupervisedBy a owl:ObjectProperty ;
+    rdfs:domain :Student ;
+    rdfs:range :Supervisor .
+
+:hasEvaluationCriteria a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :EvaluationCriteria .
+
+:hasDocumentation a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Documentation .
