@@ -1,0 +1,301 @@
+[ {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An ontology representing the process, stakeholders, and entities involved in a Final Year Project (FYP), including stages, documentation, evaluation criteria, and more."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FYP Process Ontology"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The person responsible for coordinating FYPs within the department."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Coordinator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The phase where the student develops the project based on their research."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Development"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The documentation created during the FYP process (e.g., thesis, reports, presentations)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Documentation"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The set of criteria used to evaluate the student's project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evaluation Criteria"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The overall process that a student undergoes for completing the Final Year Project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FYP Process"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The final presentation where the student presents their FYP to the evaluation committee."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Presentation"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The initial project proposal document that outlines the research project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Proposal"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The phase where the student conducts research for the FYP."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Research"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person or entity involved in the FYP process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stakeholder"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The person who is undertaking the Final Year Project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The faculty member guiding the student's project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Supervisor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process involves a coordinator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Coordinator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process includes a development phase."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Development"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process results in documentation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Documentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The end date of the FYP process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has End Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process has a set of evaluation criteria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Evaluation Criteria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process includes a final presentation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Presentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process has a proposal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Proposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process includes a research phase."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Research"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The FYP process involves one or more stakeholders."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Stakeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The start date of the FYP process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Start Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The title of the FYP process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The student is supervised by a supervisor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is Supervised By"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]

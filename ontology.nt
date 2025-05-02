@@ -1,0 +1,185 @@
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology representing the process, stakeholders, and entities involved in a Final Year Project (FYP), including stages, documentation, evaluation criteria, and more." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "FYP Process Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process involves a coordinator." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasCoordinator> <http://www.w3.org/2000/01/rdf-schema#label> "has Coordinator" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process includes a development phase." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#label> "has Development" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process results in documentation." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "has Documentation" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process has a set of evaluation criteria." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#label> "has Evaluation Criteria" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process includes a final presentation." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#label> "has Presentation" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process has a proposal." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasProposal> <http://www.w3.org/2000/01/rdf-schema#label> "has Proposal" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process includes a research phase." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasResearch> <http://www.w3.org/2000/01/rdf-schema#label> "has Research" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#comment> "The FYP process involves one or more stakeholders." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "has Stakeholder" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The student is supervised by a supervisor." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Supervised By" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date of the FYP process." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "has End Date" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date of the FYP process." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "has Start Date" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the FYP process." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has Title" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator> <http://www.w3.org/2000/01/rdf-schema#comment> "The person responsible for coordinating FYPs within the department." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Coordinator> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinator" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase where the student develops the project based on their research." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Development> <http://www.w3.org/2000/01/rdf-schema#label> "Development" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation> <http://www.w3.org/2000/01/rdf-schema#comment> "The documentation created during the FYP process (e.g., thesis, reports, presentations)." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Documentation> <http://www.w3.org/2000/01/rdf-schema#label> "Documentation" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of criteria used to evaluate the student's project." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#EvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation Criteria" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall process that a student undergoes for completing the Final Year Project." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#FYPProcess> <http://www.w3.org/2000/01/rdf-schema#label> "FYP Process" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation> <http://www.w3.org/2000/01/rdf-schema#comment> "The final presentation where the student presents their FYP to the evaluation committee." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Presentation> <http://www.w3.org/2000/01/rdf-schema#label> "Presentation" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal> <http://www.w3.org/2000/01/rdf-schema#comment> "The initial project proposal document that outlines the research project." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Proposal> <http://www.w3.org/2000/01/rdf-schema#label> "Proposal" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase where the student conducts research for the FYP." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Research> <http://www.w3.org/2000/01/rdf-schema#label> "Research" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or entity involved in the FYP process." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholder" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "The person who is undertaking the Final Year Project." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student" .
+# 
+# http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsalanahmad123.github.io/websemantics-fyp-ontology#Stakeholder> .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor> <http://www.w3.org/2000/01/rdf-schema#comment> "The faculty member guiding the student's project." .
+<http://arsalanahmad123.github.io/websemantics-fyp-ontology#Supervisor> <http://www.w3.org/2000/01/rdf-schema#label> "Supervisor" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
