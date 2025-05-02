@@ -6,42 +6,138 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
+### Ontology Definition ###
 <http://arsalanahmad123.github.io/websemantics-fyp-ontology> a owl:Ontology ;
     rdfs:label "FYP Process Ontology" ;
-    rdfs:comment "An ontology representing the process and entities involved in a Final Year Project (FYP)." .
+    rdfs:comment "An ontology representing the process, stakeholders, and entities involved in a Final Year Project (FYP), including stages, documentation, evaluation criteria, and more." .
 
 ### Classes ###
-:Stakeholder a owl:Class .
-:Student a owl:Class ;
-    rdfs:subClassOf :Stakeholder .
-:Supervisor a owl:Class ;
-    rdfs:subClassOf :Stakeholder .
-:Coordinator a owl:Class ;
-    rdfs:subClassOf :Stakeholder .
 
-:FYPProcess a owl:Class .
-:Proposal a owl:Class .
-:EvaluationCriteria a owl:Class .
-:Documentation a owl:Class .
+# Stakeholders involved in FYP process
+:Stakeholder a owl:Class ;
+    rdfs:label "Stakeholder" ;
+    rdfs:comment "A person or entity involved in the FYP process." .
+
+:Student a owl:Class ;
+    rdfs:subClassOf :Stakeholder ;
+    rdfs:label "Student" ;
+    rdfs:comment "The person who is undertaking the Final Year Project." .
+
+:Supervisor a owl:Class ;
+    rdfs:subClassOf :Stakeholder ;
+    rdfs:label "Supervisor" ;
+    rdfs:comment "The faculty member guiding the student's project." .
+
+:Coordinator a owl:Class ;
+    rdfs:subClassOf :Stakeholder ;
+    rdfs:label "Coordinator" ;
+    rdfs:comment "The person responsible for coordinating FYPs within the department." .
+
+# Main FYP process stages and documents
+:FYPProcess a owl:Class ;
+    rdfs:label "FYP Process" ;
+    rdfs:comment "The overall process that a student undergoes for completing the Final Year Project." .
+
+:Proposal a owl:Class ;
+    rdfs:label "Proposal" ;
+    rdfs:comment "The initial project proposal document that outlines the research project." .
+
+:EvaluationCriteria a owl:Class ;
+    rdfs:label "Evaluation Criteria" ;
+    rdfs:comment "The set of criteria used to evaluate the student's project." .
+
+:Documentation a owl:Class ;
+    rdfs:label "Documentation" ;
+    rdfs:comment "The documentation created during the FYP process (e.g., thesis, reports, presentations)." .
+
+# Additional stages for better coverage
+:Research a owl:Class ;
+    rdfs:label "Research" ;
+    rdfs:comment "The phase where the student conducts research for the FYP." .
+
+:Development a owl:Class ;
+    rdfs:label "Development" ;
+    rdfs:comment "The phase where the student develops the project based on their research." .
+
+:Presentation a owl:Class ;
+    rdfs:label "Presentation" ;
+    rdfs:comment "The final presentation where the student presents their FYP to the evaluation committee." .
 
 ### Object Properties ###
+
+# Relationships between entities
 :hasProposal a owl:ObjectProperty ;
     rdfs:domain :FYPProcess ;
-    rdfs:range :Proposal .
+    rdfs:range :Proposal ;
+    rdfs:label "has Proposal" ;
+    rdfs:comment "The FYP process has a proposal." .
 
 :hasStakeholder a owl:ObjectProperty ;
     rdfs:domain :FYPProcess ;
-    rdfs:range :Stakeholder .
+    rdfs:range :Stakeholder ;
+    rdfs:label "has Stakeholder" ;
+    rdfs:comment "The FYP process involves one or more stakeholders." .
 
 :isSupervisedBy a owl:ObjectProperty ;
     rdfs:domain :Student ;
-    rdfs:range :Supervisor .
+    rdfs:range :Supervisor ;
+    rdfs:label "is Supervised By" ;
+    rdfs:comment "The student is supervised by a supervisor." .
 
 :hasEvaluationCriteria a owl:ObjectProperty ;
     rdfs:domain :FYPProcess ;
-    rdfs:range :EvaluationCriteria .
+    rdfs:range :EvaluationCriteria ;
+    rdfs:label "has Evaluation Criteria" ;
+    rdfs:comment "The FYP process has a set of evaluation criteria." .
 
 :hasDocumentation a owl:ObjectProperty ;
     rdfs:domain :FYPProcess ;
-    rdfs:range :Documentation .
+    rdfs:range :Documentation ;
+    rdfs:label "has Documentation" ;
+    rdfs:comment "The FYP process results in documentation." .
+
+:hasResearch a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Research ;
+    rdfs:label "has Research" ;
+    rdfs:comment "The FYP process includes a research phase." .
+
+:hasDevelopment a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Development ;
+    rdfs:label "has Development" ;
+    rdfs:comment "The FYP process includes a development phase." .
+
+:hasPresentation a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Presentation ;
+    rdfs:label "has Presentation" ;
+    rdfs:comment "The FYP process includes a final presentation." .
+
+:hasCoordinator a owl:ObjectProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range :Coordinator ;
+    rdfs:label "has Coordinator" ;
+    rdfs:comment "The FYP process involves a coordinator." .
+
+### Data Properties ###
+
+# You can also add data properties to store attributes like project titles, dates, etc.
+:hasTitle a owl:DatatypeProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range xsd:string ;
+    rdfs:label "has Title" ;
+    rdfs:comment "The title of the FYP process." .
+
+:hasStartDate a owl:DatatypeProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range xsd:date ;
+    rdfs:label "has Start Date" ;
+    rdfs:comment "The start date of the FYP process." .
+
+:hasEndDate a owl:DatatypeProperty ;
+    rdfs:domain :FYPProcess ;
+    rdfs:range xsd:date ;
+    rdfs:label "has End Date" ;
+    rdfs:comment "The end date of the FYP process." .
+
