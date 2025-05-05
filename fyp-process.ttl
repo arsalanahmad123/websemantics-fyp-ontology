@@ -63,6 +63,83 @@
     rdfs:label "Presentation" ;
     rdfs:comment "The final presentation where the student presents their FYP to the evaluation committee." .
 
+
+
+### Class Restrictions ###
+
+# Student must be supervised by exactly one Supervisor
+:Student rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :isSupervisedBy ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Supervisor
+] .
+
+# FYPProcess must have at least one Proposal
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasProposal ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Proposal
+] .
+
+# FYPProcess must involve at least one Stakeholder
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasStakeholder ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Stakeholder
+] .
+
+# FYPProcess must have exactly one EvaluationCriteria
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasEvaluationCriteria ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :EvaluationCriteria
+] .
+
+# FYPProcess must result in at least one Documentation
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasDocumentation ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Documentation
+] .
+
+# FYPProcess must include exactly one Research phase
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasResearch ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Research
+] .
+
+# FYPProcess must include exactly one Development phase
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasDevelopment ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Development
+] .
+
+# FYPProcess must include exactly one Presentation
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasPresentation ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Presentation
+] .
+
+# FYPProcess must be coordinated by one Coordinator
+:FYPProcess rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasCoordinator ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass :Coordinator
+] .
+
+
 ### Object Properties ###
 
 # Relationships between entities
